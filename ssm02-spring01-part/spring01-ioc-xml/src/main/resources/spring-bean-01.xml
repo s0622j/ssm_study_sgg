@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 实验一 [重要]创建bean -->
+<!--    基于无参数构造函数-->
+    <bean id="happyComponent" class="com.atguigu.ioc01.HappyComponent"/>
+    <bean id="happyComponent2" class="com.atguigu.ioc01.HappyComponent"/>
+
+<!--    基于静态工厂方法实例化-->
+    <bean id="clientService" class="com.atguigu.ioc01.ClientService" factory-method="createInstance"/>
+
+    <!-- (非静态)将工厂类进行ioc配置 -->
+    <bean id="serviceLocator" class="com.atguigu.ioc01.DefaultServiceLocator">
+    </bean>
+
+    <!-- 根据工厂对象的实例工厂方法进行实例化组件对象 -->
+    <bean id="clientService" factory-bean="serviceLocator" factory-method="createClientServiceInstance"/>
+</beans>

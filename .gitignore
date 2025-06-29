@@ -1,0 +1,9 @@
+# Project exclude paths
+/ssm01-maven04-test/common-service/target/
+/ssm02-spring01-part/spring01-ioc-xml/target/
+/ssm02-spring01-part/spring02-ioc-annotation/target/
+/ssm02-spring01-part/spring03-ioc-java/target/
+/ssm02-spring01-part/spring04-aop-01/target/
+/ssm02-spring01-part/spring04-aop-02/target/
+/ssm02-spring01-part/spring04-aop-03/target/
+/ssm02-spring01-part/spring05-tx-01/target/

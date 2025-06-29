@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- gavp -->
+  <groupId>com.atguigu</groupId>  
+  <artifactId>ssm01-maven02-javaee</artifactId>  
+  <version>1.0-SNAPSHOT</version>
+  <!--打包方式
+    默认：jar
+    jar指的是普通的java项目打包方式！ 项目打成jar包！
+    war指的是web项目打包方式！项目打成war包！
+    pom不会讲项目打包！这个项目作为父工程，被其他工程聚合或者继承！后面会讲解两个概念
+  -->
+  <packaging>war</packaging>
+
+  <!--声明版本-->
+  <properties>
+    <!--命名随便,内部制定版本号即可！-->
+    <junit.version>4.13.2</junit.version>
+    <log4j.version>1.2.17</log4j.version>
+    <jackson.version>2.11.3</jackson.version>
+    <!-- 也可以通过 maven规定的固定的key，配置maven的参数！如下配置编码格式！-->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <!--
+     通过编写依赖jar包的gav必要属性，引入第三方依赖！
+     scope属性是可选的，可以指定依赖生效范围！
+     依赖信息查询方式：
+        1. maven仓库信息官网 https://mvnrepository.com/
+        2. mavensearch插件搜索
+   -->
+  <dependencies>
+    <!-- 引入具体的依赖包 -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j.version}</version>
+      <!--
+          生效范围
+          - compile ：main目录 test目录  打包打包 [默认]
+          - provided：main目录 test目录  Servlet
+          - runtime： 打包运行           MySQL
+          - test:    test目录           junit
+       -->
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <!-- jdk17 和 war包版本插件不匹配 -->
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.2</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
