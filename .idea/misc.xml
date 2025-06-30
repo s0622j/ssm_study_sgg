@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/ssm01-maven03-parent/pom.xml" />
         <option value="$PROJECT_DIR$/ssm01-maven04-test/pom.xml" />
         <option value="$PROJECT_DIR$/ssm02-spring01-part/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm03-mybatis01/pom.xml" />
       </list>
     </option>
   </component>
