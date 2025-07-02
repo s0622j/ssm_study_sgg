@@ -35,6 +35,10 @@
     <file url="file://$PROJECT_DIR$/ssm02-spring01-part/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm03-mybatis01/mybatis01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm03-mybatis01/mybatis01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm03-mybatis01/mybatis02-input/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm03-mybatis01/mybatis02-input/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm03-mybatis01/mybatis03-output/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm03-mybatis01/mybatis03-output/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm03-mybatis01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm03-mybatis01/src/main/resources" charset="UTF-8" />
   </component>

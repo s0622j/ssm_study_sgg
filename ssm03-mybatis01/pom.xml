@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>mybatis01</module>
+        <module>mybatis02-input</module>
+        <module>mybatis03-output</module>
     </modules>
 
     <properties>

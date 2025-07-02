@@ -18,9 +18,11 @@
         <module name="ssm01-maven01-javase" />
         <module name="spring05-tx-01" />
         <module name="maven04-user" />
+        <module name="mybatis03-output" />
         <module name="mybatis01" />
         <module name="order-service" />
         <module name="spring01-ioc-xml" />
+        <module name="mybatis02-input" />
       </profile>
     </annotationProcessing>
   </component>
