@@ -12,6 +12,10 @@
         <module>mybatis01</module>
         <module>mybatis02-input</module>
         <module>mybatis03-output</module>
+        <module>mybatis04-crud</module>
+        <module>mybatis05-multitable</module>
+        <module>mybatis06-dynsql</module>
+        <module>mybatis07-extend</module>
     </modules>
 
     <properties>
