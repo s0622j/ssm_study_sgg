@@ -30,6 +30,7 @@ public class JsonController {
      */
 
     @GetMapping("data")
+    //@ResponseBody
     public User data(){
         // 对象 -》json -> {}
         // 集合 -》json -> []
@@ -40,6 +41,7 @@ public class JsonController {
     }
 
     @GetMapping("data2")
+    //@ResponseBody
     public List<User> data1(){
         User user = new User();
         user.setName("two dogs!");

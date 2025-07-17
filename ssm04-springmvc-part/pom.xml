@@ -12,6 +12,8 @@
         <module>springmvc01-quick</module>
         <module>springmvc02-input</module>
         <module>springmvc03-output</module>
+        <module>springmvc04-restful</module>
+        <module>springmvc05-other</module>
     </modules>
 
 
