@@ -1,4 +1,5 @@
-import com.atguigu.Main;
+package com.atguigu;
+
 import com.atguigu.utils.JwtHelper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @author: 赵伟风
  * description:
  */
-@SpringBootTest(classes = Main.class)  //必须与启动类Main相同路径下，否则得显示指定启动类classes = Main.class
+@SpringBootTest
 public class JwtTest {
 
 
